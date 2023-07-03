@@ -1,0 +1,21 @@
+
+@keyframes animatedLogo{
+  0%   {border-radius: 0%;}
+  25%  {border-radius: 100%;
+        transform: rotate(90deg);}
+  50%  {background-color: blue;
+        transform: rotate(180deg);}
+  100% {background-color: green;
+        transform: rotate(360deg);}
+}
+div img {
+  height: 200px;
+  width: 200px;
+  animation-name: animatedLogo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;    
+}
+
+div img:hover{
+filter: brightness(65%);
+}
